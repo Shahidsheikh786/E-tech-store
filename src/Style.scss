@@ -1,0 +1,113 @@
+
+
+.active{
+  background: gray;
+}
+
+.Header{
+ background: #303332;
+ color: white;
+ padding: 20px;
+ 
+ .top{
+   display: flex;
+   justify-content: space-around;
+   padding: 10px;
+   
+   .logo{
+     font-size: 30px;
+   }
+   input{
+     background: transparent;
+     border: 1px solid  #000;
+     color: white;
+     border-radius: 7px;
+     padding: 6px;
+     &::placeholder{
+       color: white;
+     }
+   }
+ }
+ 
+}
+
+.Main{
+  
+   .filter{
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+   margin: 10px;
+
+ .item.active{
+   background: #303332;
+   
+ }
+
+  .item{
+    background: #ff3c3c;
+    padding: 5px;
+    color: white;
+    
+    
+  }
+ }
+  
+.Products{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+.Product{
+  padding: 13px;
+  border: 1px solid  #dadada;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 400px;
+  img{
+    height: 100px;
+    width: 100px;
+    border: 1px solid  black ;
+    border-radius: 50%;
+    object-fit: contain;
+  }
+}
+  
+  .contant{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    .price{
+      width: 60px;
+      background: #ff3c3c;
+      margin: 10px;
+      text-align:center;
+      padding: 3px;
+      margin-left: auto;
+      color: white;
+    }
+  }
+}
+
+
+}
+
+
+
+
+@media(max-width: 360px){
+  .Header .top{
+    flex-direction: column;
+    gap: 10px;
+    
+    input{
+      padding:  10px;
+    }
+  }
+  
+}
